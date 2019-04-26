@@ -715,10 +715,9 @@ var longPress = function (dom, longPressCallBack, touchCallBack) {
     }
 }
 
-[...document.querySelectorAll('.randweixin')].forEach(function (e, i) {
+[...document.getElementsByClassName("randweixin")].forEach(function (e, i) {
     longPress(e, function () {
         console.log('longPress');
-		
 		alert("long presss");
 		copyToClipboard("");
     }, function () {
