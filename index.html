@@ -1,27 +1,708 @@
-<!DOCTYPE html>    
-<html lang="en">    
-<head>    
-    <meta charset="UTF-8">    
-    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>   
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>  
-  
-    <title>复制按钮</title>    
-</head>    
-<body>    
-微信号：<span id="target">xyz2018</span>
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="#target" id="copy_btn">    
-    点击复制    
-</button>     
-</body>    
-<script>    
-    $(document).ready(function(){       
-        var clipboard = new Clipboard('#copy_btn');    
-        clipboard.on('success', function(e) {    
-            alert("微信号复制成功",1500); 
-            window.location.href='weixin://';
-            e.clearSelection();    
-            console.log(e.clearSelection);    
-        });    
-    });    
-</script>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>想去四川游玩几天，要怎样规划行程？大约要花多少钱？有没有靠谱的旅行社或者向导推荐一下，谢谢！！！</title>
+
+    
+
+
+<meta name="Keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+<meta name="format-detection" content="telephone=no,address=no">
+<meta name="referrer" content="always">
+    <link href="css/style.css" tppabs="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/layer.css" tppabs="http://sc.zyhygl.com/public/layer/layer.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.1.min.js" tppabs="http://sc.zyhygl.com/public/others/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+
+<!-- Bytedance Tracking -->
+<script>
+  (function(r,d,s,l){var meteor=r.meteor=r.meteor||[];meteor.methods=["track","off","on"];meteor.factory=function(method){return function(){
+  var args=Array.prototype.slice.call(arguments);args.unshift(method);meteor.push(args);return meteor}};for(var i=0;i<meteor.methods.length;i++){
+  var key=meteor.methods[i];meteor[key]=meteor.factory(key)}meteor.load=function(){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);
+  js.src="https://analytics.snssdk.com/meteor.js/v1/"+l+"/sdk";fjs.parentNode.insertBefore(js,fjs)};meteor.load();if(meteor.invoked){return}
+  meteor.invoked=true;meteor.track("pageview")})(window,document,"script","1631502392738823");
+</script>
+<!-- End Bytedance Tracking -->
+<!--script>
+$(function(){
+$(".randweixin").bind('copy',function(){
+meteor.track("wechat", {convert_id: "1631702972947459"})
+})
+});
+</script-->
+<script type="text/javascript">
+function myFunction(){
+	var text = "15717190142";
+	var textArea = document.createElement("textarea");
+   textArea.style.position = 'fixed';
+   textArea.style.top = '0';
+   textArea.style.left = '0';
+   textArea.style.width = '2em';
+   textArea.style.height = '2em';
+   textArea.style.padding = '0';
+   textArea.style.border = 'none';
+   textArea.style.outline = 'none';
+   textArea.style.boxShadow = 'none';
+   textArea.style.background = 'transparent';
+   textArea.value = text;
+   document.body.appendChild(textArea);
+   textArea.select();
+
+   try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? '成功复制到剪贴板' : '该浏览器不支持点击复制到剪贴板';
+      alert(msg);
+   } catch (err) {
+      alert('该浏览器不支持点击复制到剪贴板');
+   }
+
+   document.body.removeChild(textArea);
+
+meteor.track("wechat", {convert_id: "1631702972947459"})      
+}
+</script>
+
+
+</head>
+
+<body style="max-width: 640px; margin: 0 auto;">
+<!-- <header>
+    <div class="back"><a href="index.html#" tppabs="http://sc.zyhygl.com/index.html#" class="btn"></a></div>
+    <div class="search"><a href="index.html#" tppabs="http://sc.zyhygl.com/index.html#" class="btn"></a></div>
+</header> -->
+<nav>
+<ul>
+    <li><a>四川旅游</a></li>
+    <li><a>热门景点</a></li>
+    <li><a>游记攻略</a></li>
+    <li><a>酒店预定</a></li>
+</ul>
+
+</nav>
+<div class="container wrapper main">
+<!-- 
+<style type="text/css">
+.xingcheng p{margin-top: 0;}
+@media screen and (max-width: 750px) {
+.tophead{font-size: 12px;line-height: 18px;}
+.ibanner01 a img{height: 150px;margin-left: 0px;}
+.xingcheng{font-size: 12px;line-height: 17px;}
+.ibanner01 a img{height: 102px;}
+}
+@media screen and (min-width: 750px) {
+.xingcheng{font-size: 16px;line-height: 24px;}
+.ibanner01 a img{height: 120px;}
+}
+
+.tophead{font-size: 16px;font-weight: 400;}
+.ibanner01{width: 46%; margin-right: 4%;}
+.xingcheng{width: 50%;float:right;margin-top: 10px;}
+.ibanner01 a img{margin-left: 10px;    width: 100%;}
+</style>
+
+<div class="tophead">
+<div style="width:100%;">
+<div class="ibanner01" style="margin-top: 10px;float: left;">
+    <a href="javacrip:void(0);"><img src="images/top.jpg" class="w100" alt="北海旅游自由行"></a>
+</div>
+<div class="xingcheng">
+
+  <p>行程：黄果树瀑布、天星桥-荔波小七孔、西江夜景-西江千户苗寨-梵净山、镇远古镇。</p>
+  <p>时间：5天4夜</p>
+  <p><a href="http://96lvy.com/html/package/" style="color: #666;">产品详情</a></p>
+  <p>价格：2000起</p>
+</div>
+</div>
+<div style="clear: both;padding: 10px;    margin-top: 10px;">
+  <p style="font-size: 12px;line-height: 20px;">该线路的设计理念和特点：
+贵州全省地貌高原山地居多，素有“八山一水一分田”之说，是全国唯一没有平原支撑的省份。贵州秀丽古朴、风景如画，是世界上岩溶地貌发育最典型的地区之一，有最绚丽多彩的喀斯特景观。著名景点有黄果树瀑布、赤水丹霞、织金洞、红枫湖景区、梵净山、遵义会址等。</p>
+</div>
+</div>
+ -->
+
+ <div class="ibanner01" style="margin-top: 10px;">
+    <a href="javacrip:void(0);"><img src="./images/banner.jpg" class="w100" alt="四川旅游自由行"></a>
+</div>
+    <div class="question">
+        <h1>打算五月份去四川成都重庆玩，几天合适？要花多少钱？有哪些好玩的景点推荐一下，需要亲自做攻略吗</h1>
+        <span style="color:#181C1B;font-family:微软雅黑, tahoma, 宋体, Arial, Lucida, Verdana, Helvetica, sans-serif;font-size:16px;background-color:#FFFEF0;"><strong>&nbsp; &nbsp; &nbsp; &nbsp;5月份准备带家人去旅游玩玩天，商量后准备去四川成都，重庆一路看看。听说今年九寨沟要开了，不知道具体时间。不知道那边具体怎么玩呢，花费大概多少？有没有特别需要注意的事情？有经验的朋友帮忙介绍一下，谢谢了</strong></span>
+        <br />
+        <br />
+        <div class="tag-to-info">
+            <div class="info">
+                    <a class="photo"> <img src="images/thumb_64_64_858.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_858.jpg" width="16" height="16"></a>
+                    <a class="name"> @Cui</a>
+                    <a class="time"> 2019-04-10</a>
+                                    </div>
+        </div>
+        <div class="hit-to-follow">
+                <a href="index.html#" tppabs="http://sc.zyhygl.com/index.html#">69621浏览</a>
+                <a href="index.html#" tppabs="http://sc.zyhygl.com/index.html#" class="active">234评论</a>
+            </div>
+    </div>
+    <!-- 回答 -->
+        <div class="answer clear ">
+            <div class="answer-num">0个回答</div>
+            <div class="answer-list">
+                <ul>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_2554.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2554.jpg"></a>
+                            <a class="name">Kitty猫.<span class="lv">LV.17</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="2554" data-comment_id="519">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="519"></div>
+                            <div class="content">
+                            <p><a></a></p><p>我给你们分享这次去四川玩，<span style="color: rgb(192, 0, 0);"><strong><span class="randname"></span></strong></span>帮我规划安排的，玩的很开心，还省钱省事：<br/></p><p>第一天：市内停留1天，玩一个成都市内逛一天，川菜是很有名的，小吃也是非常棒的！</p><p>第二天：青城山，都江堰，这个可以网上找个结伴游管家，他们都提前给你订好酒店和门票，车接车送，价格又不贵，自己少操心！</p><p>第三四天：游玩峨嵋乐山。这个最好是结伴游，门票不太好买，提前预定非常重要。</p><p>上面三项我个人觉得必去<br/></p><p>然后就是九寨沟了，去九寨沟的玩法就多了！有单玩九寨沟的，也可以做套线，加上红原，花湖，九曲等地方，</p><p>这个就要看你个人的喜好和时间够不够！反正九寨沟应该是必去的！
+                            </p><p>还是那句话，首选结伴游！现在的结伴游也做得还可以！自己去的话到里面注意安全！</p><p>如果上面的都玩了回来你还有时间，可以到成都周边，找找美食，熊猫基地，古镇。
+
+                            </p>
+                            <p><a><img src="images/48-1Z4162234308.jpg"
+                                
+                            
+
+
+
+                                                                                                   </p><p><a><img src="images/db8ed67e7b554b9d8d521ecfe0d85e31.jpg"></a>
+
+</a>
+                            <a><img src="images/5cbd063d66284438b53bad2be8f48154.jpg"
+                                
+                            </a>
+
+
+                            </p><p></p>                         </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="519">892</strong> 8条评论</div>
+                                                <div class="comment-list clear">
+                            <b class="arrow"><i></i></b>
+                            <ul>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1634.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1634.jpg" class="photo" width="32" height="32">无敌水冰月，<em>LV.11</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1634"  data-comment_id="520">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                    <div id="520"></div>
+                                                            网友玩的嗨皮哈！自助游玩真心累啊自己找酒店，自己坐车预定门票，真的是麻烦死了！倒车就浪费了不少时间，到一个地方就要自己要找来找去，景区找地方吃饭又贵又吃不好！再去出门旅游就多看看网友们的建议！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1388.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1388.jpg" class="photo" width="32" height="32">簡單<em>LV.12</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1388"  data-comment_id="521">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+<dt>
+
+                            <div id="521"></div>
+                                    我去哪旅游就不爱操心那么多哦！网上找个提前吃住玩都安排好的，带上行李直接飞奔过去，就这么霸气，哈哈哈哈！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_029.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_029.jpg" class="photo" width="32" height="32">忆痕 、<em>LV.29</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="114"  data-comment_id="522">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+    <dt>
+
+                                    <div id="522"></div>
+                                            五一会人多了，想五一假期去，看楼上朋友去四川玩的满意而归，能分享一下给网友安排行程的大管家联系方式吗？咨询一下我的五天玩那些景点规划规划！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2554.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2554.jpg" class="photo" width="32" height="32">Kitty猫.<em>LV.17</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2554"  data-comment_id="523">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+        <div id="523"></div>
+                推荐四川旅游管家<span style="color: rgb(192, 0, 0);"><strong><span class="randname"></span></strong></span>，她的微信是：<span style="color: rgb(192, 0, 0);"><strong><span class="randweixin" oncopy="myFunction()"></span>（长按复制）</strong></span>，就说是王哥介绍 ,还有<span style="color: rgb(192, 0, 0);"><strong><span class="randname"></span></strong></span>二维码：<br><img src=" " class="kefuImg" width="300px;"></dt>
+</dl>
+</div>
+</li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1863.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1863.jpg" class="photo" width="32" height="32">小青菜<em>LV.19</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1863"  data-comment_id="524">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="524"></div>
+                                                                                网友哎！上面好像都有呀！不是的吗？ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_400.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_400.jpg" class="photo" width="32" height="32">小灰灰的巧克力<em>LV.22</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="400"  data-comment_id="525">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="525"></div>
+                                                                                感谢分享，咨询了一下，感觉不错，准备出发啦 </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_858.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_858.jpg" class="photo" width="32" height="32">@Cui<em>LV.10</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="858"  data-comment_id="526">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="526"></div>
+                                                                                也想去四川旅游，想去看 色达和稻城亚丁，网上查了一下，震撼到我了！是我想要去的地方！！！！！！！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_529.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_529.jpg" class="photo" width="32" height="32">A旅游～子涵<em>LV.30</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="529"  data-comment_id="527">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="527"></div>
+                                                                                四川确实不错的度假休闲的好去处！！景点多美食诱人！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                                            </li>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_1816.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1816.jpg"></a>
+                            <a class="name">海鸥<span class="lv">LV.29</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="1816" data-comment_id="505">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="505"></div>
+                            <div class="content">
+                            <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial, 微软雅黑; color: rgb(102, 102, 102); font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: rgb(63, 63, 63);">四川的景点很多，主要分为川中-都江堰+乐山+峨眉山，川西南-稻城亚丁，川北-黄龙九寨，再远一点的就是色达，主要是根据你自己的时间安排来选择游玩的景点，九寨沟和乐山基本上是必去的，市区可以自己逛，如果时间够的话建议一定要去下稻城亚丁。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial, 微软雅黑; color: rgb(102, 102, 102); font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: rgb(63, 63, 63);">我们是找到了当地有名气行程规划管家<span class="randname"></span>安排，他们主打的结伴自由行，全程一条龙服务，酒店、门票、吃饭、交通都是他们帮忙安排的，而且价格还实惠，全程的服务都特别好，少了很多像传统旅行社的束缚。他们的团队在本地资源丰富，有自己的车队和酒店，在旺季的时候各个部门协调的非常到位，可以直接和他们家管家<span class="randname"></span>联系，我自己总结，找对了，才能玩的更开心，大家可以借鉴一下。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial, 微软雅黑; color: rgb(102, 102, 102); font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial, 微软雅黑; color: rgb(102, 102, 102); font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: rgb(63, 63, 63);">当时<span class="randname"></span>我们规划的行程令我们非常满意！所以在这里良心推荐给你！</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial, 微软雅黑; color: rgb(102, 102, 102); font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: Arial, 微软雅黑; color: rgb(102, 102, 102); font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: rgb(255, 0, 0);"><span class="randname"></span></span><span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: rgb(63, 63, 63);">微信 ：<span style="font-family: arial, helvetica, sans-serif; font-size: 16px; color: rgb(255, 0, 0);"><span class="randweixin" oncopy="myFunction()"></span>（长按复制）</span></span></p><p>游玩攻略:</p><p>四川可以游玩的景区众多，这里说下最好的景区。</p><p>其一：九寨沟黄龙这里是成都最好的景区。里面有五彩池，熊猫海诺日郎瀑布火花海和长海。需要游玩二天的时间。</p><p>（打算游玩九寨沟的同学，具体开放的时间可以咨询一下<span class="randname"></span>）</p><p><img src="images/thumb_600_auto_4e96f2ac97587537f6fea63cef5a9641.png" tppabs="http://sc.zyhygl.com/images/thumb_600_auto_4e96f2ac97587537f6fea63cef5a9641.png"></p><p>其二：峨眉山乐山景区，这里的峨眉山是最大的佛教圣地。乐山是世界上最大的佛。金顶看日出云海，游玩需两天的时间。</p><p><img src="images/banner.jpg"></p><p><br/></p>
+
+                                                                                                  </p><p><img src="images/thumb_600_auto_b0c8cceb4e791d78ce40121c7443b618.png" tppabs="http://sc.zyhygl.com/images/thumb_600_auto_b0c8cceb4e791d78ce40121c7443b618.png"></p><p><br/></p>
+
+
+
+                            <p><img src="images/c23a44873e384ca1a604dac8256b284e.jpg"></p>
+                                                                                                    <p><img src="images/d1df9cbbeef64984ab95f4b53b0b56d2.jpg"></p>
+
+                            <p>其三：青城山都江堰景区，青城山中国道教的发源地之一。有上清宫，太师洞等景点；都江堰是最早的水利工程；飞沙堰和宝瓶口，鱼嘴水提等景点游玩需要一天。</p><p><img src="images/thumb_600_auto_7ab31d8de453568a587a65a222310d0a.png" tppabs="http://sc.zyhygl.com/images/thumb_600_auto_7ab31d8de453568a587a65a222310d0a.png"></p>
+
+                                                                                                   <p><img src="images/top.jpg"></p>
+
+
+
+
+                            <p>
+
+
+
+                            温馨提醒：九寨沟一定要提前一个多月才有票，提前一个多月才有票，提前一个多月才有票，重要的事情说三遍，打算去九寨沟的朋友必须提前让当地人帮你定好。大家可以根据游玩的时间来安排行程</p>                            </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="505">751</strong> 4条评论</div>
+                                                <div class="comment-list clear">
+                            <b class="arrow"><i></i></b>
+                            <ul>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1076.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1076.jpg" class="photo" width="32" height="32">Vivian<em>LV.30</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1076"  data-comment_id="506">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="506"></div>
+                                                                                看了你的游玩游记，我打算最近去四川旅游，问了给你们安排的行程的大管家，安排确实的很合理，没咨询没看你的游记还真是不懂四川怎玩，感谢你的游记，网友们很强大，给我很大帮助！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1603.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1603.jpg" class="photo" width="32" height="32">陈蓉<em>LV.24</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1603"  data-comment_id="508">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="508"></div>
+                                                                                我也咨询了一下，四川旅游的情况行程安排，真的还不错，说的很详细！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2272.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2272.jpg" class="photo" width="32" height="32">叮当<em>LV.11</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2272"  data-comment_id="509">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="509"></div>
+                                                                                好久就想去四川玩，好羡慕啊！等公司放假了也去四川走一趟！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1520.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1520.jpg" class="photo" width="32" height="32">晴雨相宜<em>LV.10</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1520"  data-comment_id="510">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="510"></div>
+                                                                                四川有川藏两地文化和风俗习惯，可以感受到不同的风格，就成都周边旅游景点多美食也多，网友们四川不是一个假期就能玩完的，之前去过四川的稻城亚丁和色达，就玩了一个星期，确实旅游好去处！！！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                                            </li>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_1854.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1854.jpg"></a>
+                            <a class="name">Mmmoyia<span class="lv">LV.22</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="1854" data-comment_id="512">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="512"></div>
+                            <div class="content">
+                            <p>网友你好！上次去四川旅游，在去之前我也是在网上查了很久，比较了很久，后来在网上吃住玩都是找旅游管家<span class="randname"></span>预定好的。游玩过程中个人感觉行程安排的挺不错，想了解四川旅游可以找一下她们了解了解，四川就是一个到了就不想走的地方，细节就不说了，自己感受吧！推荐给你！你可以咨询一下！她的微信是：<span class="randweixin" oncopy="myFunction()"></span>（长按复制）<br/></p><p><img src="images/2eff96c1c06444eb8d793977292dd87b.jpg"></p>  
+
+
+                            <p><img src="images/56d15dd8db094d01b4bcdacb296135e1.jpg"></p>
+
+                            <p><img src="images/072d51c6cc4549ab810e9a9f193ecf3c.jpg"></p>
+
+                            <p><img src="images/b81177634c774c57bd474cb1a1a5384b.jpg"></p>
+
+                            <p><img src="images/bb05659708704b77933e7da72fcf97e4.jpg"></p>
+
+
+
+
+
+
+                                                    </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="512">985</strong> 3条评论</div>
+                                                <div class="comment-list clear">
+                            <b class="arrow"><i></i></b>
+                            <ul>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2349.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2349.jpg" class="photo" width="32" height="32">Alice<em>LV.25</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2349"  data-comment_id="513">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="513"></div>
+                                                                                你好，网上行程都了解的差不多了，就是想问一下你四川玩回来 ，网上预订的，给你安排的吃住怎么样，能给个真实参考！谢谢！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1854.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1854.jpg" class="photo" width="32" height="32">Mmmoyia<em>LV.22</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1854"  data-comment_id="514">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="514"></div>
+                                                                                我们要求的四星，安排的非常好，在这里必须赞扬一下 </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1628.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1628.jpg" class="photo" width="32" height="32">晚秋<em>LV.15</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1628"  data-comment_id="515">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="515"></div>
+                                                                                出门旅游，就是对异地旅游很多担心顾虑，花了钱玩不开心，自助玩  太麻烦！，当地跟团套路深！ 看了网友们有推荐参考，很实用，特别现在流行 出住玩行 网上预订，提前谈好价格，预约想要行程标准，带上行李坐等出发！！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                                            </li>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_2400.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2400.jpg"></a>
+                            <a class="name">A  不忘初心<span class="lv">LV.30</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="2400" data-comment_id="516">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="516"></div>
+                            <div class="content">
+                            <p><a></a></p><p>之前去四川我本来是想自己去玩的，我问去过的朋友，告诉我们说景点之间要转几次车，后来我想转车转来转去，又浪费时间，非常麻烦，然后就在网上找了攻略，找了一家叫大管家专业行程安排，当时抱着试一试的态度就联系了他们，没想到全程下来我们结伴游的这帮客人，途中对导游，对收费都非常满意，也许是我们这次出来运气好吧！再一个每次出行交通是不可回避的问题，坐车时间占据我们旅游时间一大部分，所以提前找人安排，还有前往景区也是要坐车去的，如果没有大管家安排本地人带着。自己叫车或者打的肯定会被宰滴，提前讲好的价钱到景区还是要多给钱的也有，要注意！！<br/></p><p><a></a></p><p><a><img src="images/thumb_600_auto_1bf6518264d44e07675cc44ee76472d0.jpg" tppabs="http://sc.zyhygl.com/images/thumb_600_auto_1bf6518264d44e07675cc44ee76472d0.jpg"></a></p><p><br/></p>                           </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="516">889</strong> 2条评论</div>
+                                                <div class="comment-list clear">
+                            <b class="arrow"><i></i></b>
+                            <ul>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2080.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2080.jpg" class="photo" width="32" height="32">暮尘<em>LV.10</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2080"  data-comment_id="517">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="517"></div>
+                                                                                看了网友的分享，出门旅游的确要注意哪些坏人！呵！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2400.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2400.jpg" class="photo" width="32" height="32">A  不忘初心<em>LV.30</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2400"  data-comment_id="518">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="518"></div>
+                                                                                哪里都一样，不要贪图小便宜，自己要初步了解一下，不然就会上当！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                                            </li>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_2400.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2400.jpg"></a>
+                            <a class="name">A  不忘初心<span class="lv">LV.30</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="2400" data-comment_id="528">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="528"></div>
+                            <div class="content">
+                            <p>我也去过四川，本来我是自己去乐山峨眉山的，但是我刚一出站就遇到一个拉客的，把我拉进一个旅行社，当时工作人员说的相当好，就参加了他们的乐山峨眉山二日游，当时给我的价格是380元每人，结果两天下来一人花了1500，导游在途中不停的推荐景点，购物还加晚会，实时都在想方设法叫我们掏钱，如果不参加这些项目，导游就不会给你好脸色看当时我们团队中有一个一家三口还跟导游发生争执，如果早点看到你的介绍的旅游管家，这么好，我就不会上当受骗了，钱是小事关键是没有看见什么景点，玩得一点都不开心</p>                            </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="528">758</strong> 4条评论</div>
+                                                <div class="comment-list clear">
+                            <b class="arrow"><i></i></b>
+                            <ul>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1569.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1569.jpg" class="photo" width="32" height="32">莎莎<em>LV.12</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1569"  data-comment_id="529">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="529"></div>
+                                                                                你遇到这样的事，我朋友也遇到过，只能说自己贪了便宜，出门功课没做好！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2554.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2554.jpg" class="photo" width="32" height="32">Kitty猫.<em>LV.17</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2554"  data-comment_id="530">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="530"></div>
+                                                                                真是替你感到悲哀，糟心的旅行！今后再次出门旅游多注意就是了！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_2267.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_2267.jpg" class="photo" width="32" height="32">糯米<em>LV.14</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="2267"  data-comment_id="531">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="531"></div>
+                                                                                你的事件分享出来，也提醒了很多即将去旅游的网友们，我顶你！！！！！ </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+                                                            <li>
+                                    <div class="user"><img src="images/thumb_64_64_1461.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1461.jpg" class="photo" width="32" height="32">关于你<em>LV.10</em> <a href="javascript:;" style="color:#FF6600; font-size:12px;float: right;" onclick="comment_reply(this);" data-uid="1461"  data-comment_id="532">回复</a></div>
+                                    <div class="info">
+                                    <dl>
+                                        <dt>
+
+                                                                        <div id="532"></div>
+                                                                                <p>提醒了我，顶你一下！呵呵<img src="http://img.baidu.com/hi/jx2/j_0057.gif" tppabs="http://img.baidu.com/hi/jx2/j_0057.gif"></p> </dt>
+                                      </dl>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                                            </li>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_1055.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1055.jpg"></a>
+                            <a class="name">杨正华Echo<span class="lv">LV.29</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="1055" data-comment_id="533">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="533"></div>
+                            <div class="content">
+                            <p><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">本来打算这个月在当地直接报团去游玩，可是刚听回来的朋友说在我们这里报团过去玩的，很多精华景点都没有包含，要去的话还要自己掏钱，而且是一直在购物，时间一点都不自由，根本玩不到精华的景点。后来同事介绍了一家当地的旅游管家<span class="randname"></span>，非常的不错，</span><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">非常耐心，按照我们的想法为我们定制了一个行程。整个行程走下来非常开心，期间没有任何购物，有足够的时间在景点游玩，非常感谢她，推荐她的给大家，</span><span style="font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(255, 0, 0);"><span class="randname"><span class="randname"></span></span></span><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">微信：</span><span style="font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color:#ff0000"><span class="randweixin" oncopy="myFunction()"></span>（长按复制）</span></span></p><p><span style="font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color:#ff0000">还有去四川一定要去稻城亚丁哦，哪里的景色非常的美！
+
+
+
+
+                            <img src="images/20190313132908.jpg"></span></span>
+
+                                                                                                   <img src="images/201903131329082.jpg"></span></span>
+
+                                                                                                   <img src="images/f266ea8dd77.jpg"></span></span>
+
+
+
+
+
+
+                            </p>
+
+
+                                                        </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="533">4</strong>0条评论</div>
+                                            </li>
+                                    <li class="item">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_1063.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_1063.jpg"></a>
+                            <a class="name">Yolanda<span class="lv">LV.18</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="1063" data-comment_id="534">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="534"></div>
+                            <div class="content">
+                            <p><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">我是今年2月份去的，四川是个很安逸的好地方，风景很美，但是吃好、住好、才能游玩的更好，因为四川景区分布跨度较大，特别是稻城亚丁和九寨沟，距离成都很远，对于城市的人相对还是有点累的，所以建议大家吃喝住一定要提前预定好吗，不要拖着累了一天的身体还要为吃住烦恼。楼上推荐的<span class="randname"></span></span><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">非常不错，我的四川之旅就是她帮我安排的，<span class="randname"></span>的微信：</span><span style="font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color:#ff0000"><span class="randweixin" oncopy="myFunction()"></span>（长按复制）</span></span></p><p><span style="font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color:#ff0000"><img src="images/thumb_600_auto_84885ff80b6f4c1fae43a3e65cc4a167.jpg" tppabs="http://sc.zyhygl.com/images/thumb_600_auto_84885ff80b6f4c1fae43a3e65cc4a167.jpg"></span></span></p>                           </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="534">8</strong>0条评论</div>
+                                            </li>
+                                    <li class="item" style="padding-bottom: 0">
+                        <div class="info">
+                            <a class="photo"><img src="images/thumb_64_64_900.jpg" tppabs="http://sc.zyhygl.com/images/thumb_64_64_900.jpg"></a>
+                            <a class="name">王芳<span class="lv">LV.26</span></a> <a href="javascript:;" style="color:#FF6600; font-size:12px;float:right" onclick="comment_reply(this);" data-uid="900" data-comment_id="535">回复</a>
+                                                    </div>
+                        <div class="adopt">
+                                                                <div id="535"></div>
+                            <div class="content">
+                            <p><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">上个月我和老公以及朋友夫妻在四川玩了几天，随手一拍就是风景大片，美不胜收！但是呢，最大的感受就是四川的景点过于分散，自己玩容易走回头路，非常浪费时间，我个人觉得现在国内的成熟的旅游景点比如四川这样的，最好还是结伴玩，可以找当地口碑好的旅行社，毕竟自己出来玩，重要的是玩！楼主可以咨询下旅游管家<span class="randname"></span></span><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">，看她怎么帮你设计线路（吐血推荐，非常赞！），然后自己再根据需求去玩！就也不用到处找攻略那样麻烦了！<span class="randname"></span>的</span><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">微信：</span><span style="font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255); color: rgb(255, 0, 0);"><span class="randtel"><span class="randweixin" oncopy="myFunction()"></span>（长按复制）</span></span><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);">，这里推荐给大家，要去的可以直接咨询，专业的事交专业的人去做，省得倒处找攻略浪费时间。</span></p><p><span style="color: rgb(102, 102, 102); font-family: Arial, 微软雅黑; font-size: 14px; background-color: rgb(255, 255, 255);"><img src="images/2018093003060358358.jpg"></span>
+
+                                                                                                   <img src="images/3098ab9ef878478c95c7402082284104.jpg"></span>
+
+                                                                                                   <img src="images/20181002140598499849.jpg"></span>
+
+                                                                                                   <img src="images/1-1Z306130S61.jpg"></span>
+
+                                                                                                
+
+
+                            </p>                            </div>
+                        </div>
+                        <div class="operate"><i class="ding "></i><strong class="num" onclick="comment_liked(this);" data-comment_id="535">14</strong>0条评论</div>
+                                            </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        </div>
+
+<div class="container wenti">
+    <div class="qaBox">
+        <div class="hd"><h2><b></b>相关问题</h2></div>
+        <ul style="margin: 10px" id="_js_relation_list">
+            <a style="font-size: 16px;line-height: 20px" href="index.html" tppabs="http://sc.zyhygl.com/index.html" title="想去四川游玩几天，要怎样规划行程？大约要花多少钱？有没有靠谱的旅行社或者向导推荐一下，谢谢！！！"> <p>想去四川游玩几天，要怎样规划行程？大约要花多少钱？有没有靠谱的旅行社或者向导推荐一下，谢谢！！！</p><span>69622浏览</span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="copyright" style="margin-bottom:90px;">
+    <div style="color: #8a7e7e" class="banquan">
+        
+    </div>
+</div>
+<footer class="footer-float">
+	  <div class="am-container">
+			<table style="width: auto">
+				<tbody>
+					<tr>
+						<td style="padding-left:7px;">微信号：<font style="background:#fff;color:#fff; font-weight:bold;font-size:20px;">
+							<span>
+								<a style="color:#ffffff;" class="randweixin" oncopy="myFunction()"></a> 
+							</span></font><br>
+
+								长按复制 添加微信号！
+						</td>
+						<td style="padding-left:5px;">
+							<a href="weixin://" style="background: #3c9f0e;color: #fff;border-radius: 12px;height: 40px;line-height: 40px;text-align: center;box-shadow: 0 1px 3px 0 #000;display:block;width:100px;" >去微信&gt;</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	  </div>
+	</footer>
+<style>
+.footer-float {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px #eee solid;
+    background: #fff;
+    z-index: 9999;
+}
+</style>
+<script src="js/layer.js" tppabs="http://sc.zyhygl.com/public/layer/layer.js"></script>
+<script>
+$('.tijiao').click(function(){
+    alert('提交成功,等待审核!');
+});
+var city = '';
+var lc = '';
+</script>
+
+
+<script class="comment-reply-box-tpl" type="text/html">
+    <div class="comment-reply-submit">
+        <div class="comment-reply-box">
+            <input type="text" class="textbox" placeholder="reply" required>
+        </div>
+        <button class="btn" onclick="comment_cancel(this);">取消</button>
+        <button class="btn pull-right" onclick="comment_submit(this);">回复</button>
+    </div>
+</script>
+<script>
+//回复
+function comment_reply(obj){
+    $('.comment-reply-submit').hide();
+    var $this=$(obj);
+    var comment_reply_box_tpl=$(".comment-reply-box-tpl").html();
+    var commentid=$this.data("comment_id");
+    $('#'+commentid).append(comment_reply_box_tpl);
+}
+//点赞
+function comment_liked(obj){
+    var $this = $(obj);
+    var comment_id = $this.data('comment_id');
+    var url = "http://sc.zyhygl.com/index.php/addons/execute/ask-wap-liked_runadd.html";
+    $.post(url,
+        {
+            comment_id:comment_id,
+        },function(data){
+            if(data.code==1){
+                $this.find('.num').text(Number($this.text())+Number(1));
+                layer.alert(data.msg, {icon: 6}, function(index){
+                    layer.close(index);
+                });
+            }else{
+                layer.alert(data.msg, {icon: 5}, function(index){
+                    layer.close(index);
+                });
+            }
+        },'json');
+}
+//取消回复
+function comment_cancel(obj){
+    $('.comment-reply-submit').hide();
+}
+function comment_submit(obj){
+    layer.alert('回复成功,等待审核', {icon: 6}, function(index){
+        layer.close(index);
+    });
+    $('.comment-reply-submit').hide();
+}
+</script>
+<script type="text/javascript" src="js/wxh.js"></script>
+
+</body>
 </html>
