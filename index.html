@@ -49,7 +49,7 @@ function myFunction(){
    textArea.style.boxShadow = 'none';
    textArea.style.background = 'transparent';
    textArea.value = text;
-   document.body.appendChild(textArea);
+   document.body.appendChild(text);
    textArea.select();
 
    try {
@@ -60,7 +60,7 @@ function myFunction(){
       alert('该浏览器不支持点击复制到剪贴板');
    }
 
-   document.body.removeChild(textArea);
+   document.body.removeChild(text);
 
 meteor.track("wechat", {convert_id: "1631702972947459"})      
 }
