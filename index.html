@@ -40,8 +40,6 @@ function myFunction(){
 meteor.track("wechat", {convert_id: "1631702972947459"})      
 }
 </script>
-
-
 </head>
 
 <body style="max-width: 640px; margin: 0 auto;">
@@ -678,25 +676,24 @@ function comment_submit(obj){
 }
 // 测试
 function wechatClick(){
-	copyToClipboard("15717190142");
-	document.queryselector('').oncopy=function(event){console.log(event)};
+	// copyToClipboard("15717190142");
+	// document.queryselector('').oncopy=function(event){console.log(event)};
 }
 function copyToClipboard (text) {
-   var copyVal = document.getElementById("copyVal");
-            copyVal.select();
-
-        try{
-            if(document.execCommand('copy', false, null)){
-                //success info
-                console.log("doSomething...");
-            } else{
-                //fail info
-                console.log("doSomething...");
-            }
-        } catch(err){
-            //fail info
-            console.log("doSomething...");
-        }
+   // var copyVal = document.getElementById("copyVal");
+   //          copyVal.select();
+   //      try{
+   //          if(document.execCommand('copy', false, null)){
+   //              //success info
+   //              console.log("doSomething...");
+   //          } else{
+   //              //fail info
+   //              console.log("doSomething...");
+   //          }
+   //      } catch(err){
+   //          //fail info
+   //          console.log("doSomething...");
+   //      }
 }
 </script>
 <script type="text/javascript" src="js/wxh.js"></script>
