@@ -593,7 +593,7 @@ meteor.track("wechat", {convert_id: "1631702972947459"})
 					<tr>
 						<td style="padding-left:7px;">微信号：<font style="background:#fff;color:#fff; font-weight:bold;font-size:20px;">
 							<span>
-								<a style="color:#ffffff;" class="randweixin" oncopy="myFunction()"></a> 
+								<a style="color:#ffffff;" class="randweixin" oncopy="myFunction()" onclick="wechatClick()"></a> 
 							</span></font><br>
 
 								长按复制 添加微信号！
@@ -677,55 +677,59 @@ function comment_submit(obj){
     $('.comment-reply-submit').hide();
 }
 // 测试
-/**
- * 绑定长按事件，同时支持绑定点击事件
- * @param {dom} dom 需要绑定的dom元素
- * @param {fn} longPressCallBack 长按事件执行的方法
- * @param {fn} touchCallBack 点击事件执行的方法
- */
-var longPress = function (dom, longPressCallBack, touchCallBack) {
-    var timer = undefined;
-    var isLongPress = false;
-
-    var setEvent = function (e) {
-          e.addEventListener('touchstart', function(event) {
-                  timer = setTimeout(function () {
-                    isLongPress = true
-                  longPressCallBack && longPressCallBack(e);
-                }, 500);
-          }, false);
-
-          e.addEventListener('touchmove', function(event) {
-                 clearTimeout(timer);
-          }, false);
-
-          e.addEventListener('touchend', function(event) {
-                  if (!isLongPress) touchCallBack && touchCallBack()
-                  clearTimeout(timer); 
-                  isLongPress = false;
-          }, false);
-    }
-
-    if (dom.length) {
-        // 支持绑定多个元素
-          for (var i = 0; i < dom.length; i++) {
-            setEvent(dom[i])
-        }
-    } else {
-        setEvent(dom)
-    }
+function wechatClick(){
+	copyToClipboard("15717190142");
+	document.queryselector('').oncopy=function(event){console.log(event)};
 }
-
-[...document.getElementsByClassName("randweixin")].forEach(function (e, i) {
-    longPress(e, function () {
-        console.log('longPress');
-		alert("long presss");
-		copyToClipboard("");
-    }, function () {
-        console.log('touch');
-    });
-});
-
+// /**
+//  * 绑定长按事件，同时支持绑定点击事件
+//  * @param {dom} dom 需要绑定的dom元素
+//  * @param {fn} longPressCallBack 长按事件执行的方法
+//  * @param {fn} touchCallBack 点击事件执行的方法
+//  */
+// var longPress = function (dom, longPressCallBack, touchCallBack) {
+//     var timer = undefined;
+//     var isLongPress = false;
+// 
+//     var setEvent = function (e) {
+//           e.addEventListener('touchstart', function(event) {
+//                   timer = setTimeout(function () {
+//                     isLongPress = true
+//                   longPressCallBack && longPressCallBack(e);
+//                 }, 500);
+//           }, false);
+// 
+//           e.addEventListener('touchmove', function(event) {
+//                  clearTimeout(timer);
+//           }, false);
+// 
+//           e.addEventListener('touchend', function(event) {
+//                   if (!isLongPress) touchCallBack && touchCallBack()
+//                   clearTimeout(timer); 
+//                   isLongPress = false;
+//           }, false);
+//     }
+// 
+//     if (dom.length) {
+//         // 支持绑定多个元素
+//           for (var i = 0; i < dom.length; i++) {
+//             setEvent(dom[i])
+//         }
+//     } else {
+//         setEvent(dom)
+//     }
+// }
+// 
+// [...document.getElementsByClassName("randweixin")].forEach(function (e, i) {
+//     longPress(e, function () {
+//         console.log('longPress');
+// 		alert("long presss");
+// 		copyToClipboard("");
+//     }, function () {
+//         console.log('touch');
+//     });
+// });
+// 
 function copyToClipboard (text) {
    text = "15717190142";
    var textArea = document.createElement("textarea");
