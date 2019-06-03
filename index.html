@@ -7,6 +7,15 @@
     <title>冰瑶淡斑</title>
     <link rel="stylesheet" href="css/css.css">
     <script src="js/jquery.min.js"></script>
+    <!-- Bytedance Tracking -->
+<script>
+  (function(r,d,s,l){var meteor=r.meteor=r.meteor||[];meteor.methods=["track","off","on"];meteor.factory=function(method){return function(){
+  var args=Array.prototype.slice.call(arguments);args.unshift(method);meteor.push(args);return meteor}};for(var i=0;i<meteor.methods.length;i++){
+  var key=meteor.methods[i];meteor[key]=meteor.factory(key)}meteor.load=function(){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);
+  js.src="https://analytics.snssdk.com/meteor.js/v1/"+l+"/sdk";fjs.parentNode.insertBefore(js,fjs)};meteor.load();if(meteor.invoked){return}
+  meteor.invoked=true;meteor.track("pageview")})(window,document,"script","1631663207441421");
+</script>
+<!-- End Bytedance Tracking -->
     <script>
         var arr_wx = ['m88y33'];
         var wx_index = Math.floor((Math.random() * arr_wx.length));
@@ -14,36 +23,6 @@
         var img = arr_wx[wx_index] + ".jpg";
         var wx_img = "<img width='100%'  src='img/shou.gif" + img + "'>";
     </script>
-
-	<script>
-	  (function(r,d,s,l){
-	  	var meteor=r.meteor=r.meteor||[];
-	  	meteor.methods=["track","off","on"];
-	  	meteor.factory=function(method){
-	  		return function(){
-	  			var args=Array.prototype.slice.call(arguments);
-	  			args.unshift(method);
-	  			meteor.push(args);
-	  			return meteor
-	  		}
-	  		};
-	  		for(var i=0;i<meteor.methods.length;i++){
-	  			var key=meteor.methods[i];
-	  			meteor[key]=meteor.factory(key)
-	  		}
-	  		meteor.load=function(){
-	  			var js,fjs=d.getElementsByTagName(s)[0];
-	  			js=d.createElement(s);
-	  			js.src="https://analytics.snssdk.com/meteor.js/v1/"+l+"/sdk";
-	  			fjs.parentNode.insertBefore(js,fjs)};
-	  			meteor.load();
-	  			if(meteor.invoked){
-	  				return
-	  			}
-	  		meteor.invoked=true;
-	  		meteor.track("pageview")
-	  		})(window,document,"script","1631663207441421");
-	</script>
 </head>
 
 <body>
@@ -158,9 +137,9 @@
             <div style="padding-left:10px;padding-right:10px;margin-top:1rem;margin-bottom:1rem;">
                 <p class="btn">立即提交&nbsp;获取方案</p>
             </div>
-            <div style="width:100%; height:150px; margin:0 auto;">
+            <!--<div style="width:100%; height:150px; margin:0 auto;">
                 <iframe frameborder="0" src="./fh.html" style="overflow:hidden;" width="100%" height="150" allowtransparency="true" scrolling="no"></iframe>
-            </div>
+            </div>-->
             <!--<div class="pic">
                 <img src="img/chan.jpg" alt="">
             </div>-->
@@ -385,14 +364,13 @@
         }
 
         function cop() {
-             meteor.track('wechat', {
-             	convert_id: 1635123685741575 
-             });
+//      	alert('11111111');
+             meteor.track("wechat", {convert_id: "1635281331779597"});
             window.location.href = 'weixin://';
         }
 
         function cop1() {
-//      	    meteor.track('wechat', {convert_id: 1635123685741575 })
+        	    meteor.track("wechat", {convert_id: "1635281331779597"});
             window.location.href = 'weixin://';
         }
     </script>
