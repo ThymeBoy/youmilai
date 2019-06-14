@@ -1,0 +1,5 @@
+.youmiliaScale img{
+	background-size:contain|cover;
+	width:100%;
+	height: auto;
+}
